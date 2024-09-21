@@ -1,107 +1,131 @@
 {
-    "boxShadow": "none",
-    "requiresFlatWidgetChildren": true,
-    "isCanvas": true,
-    "iconSVG": "https://appcdn.appsmith.com/static/media/icon.5c9511142b3624c7491c5442e8ccd0ef.svg",
-    "topRow": 0,
-    "pageSize": 7,
-    "type": "LIST_WIDGET_V2",
-    "itemSpacing": 8,
-    "animateLoading": true,
-    "dynamicBindingPathList": [
-        {"key": "currentItemsView"},
-        {"key": "selectedItemView"},
-        {"key": "triggeredItemView"},
-        {"key": "primaryKeys"},
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "listData"}
-    ],
-    "leftColumn": 0,
-    "enhancements": true,
-    "children": [{
-        "mobileBottomRow": 400,
-        "widgetName": "Canvas4",
-        "displayName": "Canvas",
-        "topRow": 0,
-        "bottomRow": 440,
-        "parentRowSpace": 1,
-        "type": "CANVAS_WIDGET",
-        "canExtend": false,
-        "hideCard": true,
-        "dropDisabled": true,
-        "openParentPropertyPane": true,
-        "minHeight": 400,
-        "mobileRightColumn": 50.31884765625,
-        "noPad": true,
-        "parentColumnSpace": 1,
-        "leftColumn": 0,
-        "dynamicBindingPathList": [],
-        "key": "kg9l7bbjyw",
-        "isDeprecated": false,
-        "rightColumn": 50.31884765625,
-        "detachFromLayout": true,
-        "widgetId": "qlp2y0x1ui",
-        "containerStyle": "none",
-        "minWidth": 450,
-        "isVisible": true,
-        "version": 1,
-        "parentId": "oys38mpanj",
-        "renderMode": "CANVAS",
-        "isLoading": false,
-        "mobileTopRow": 0,
-        "responsiveBehavior": "fill",
-        "mobileLeftColumn": 0,
-        "flexLayers": []
-    }],
-    "itemBackgroundColor": "#FFFFFF",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisible": true,
-    "tags": [
-        "Suggested",
-        "Display"
-    ],
-    "hasMetaWidgets": true,
-    "isLoading": false,
-    "mainCanvasId": "qlp2y0x1ui",
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "additionalStaticProps": [
-        "level",
-        "levelData",
-        "prefixMetaWidgetId",
-        "metaWidgetId"
-    ],
-    "mobileBottomRow": 44,
-    "currentItemsView": "{{[]}}",
-    "triggeredItemView": "{{{}}}",
-    "widgetName": "List1",
-    "listData": "{{data.todos}}",
-    "dynamicPropertyPathList": [
-        {"key": "primaryKeys"},
-        {"key": "onItemClick"}
-    ],
-    "displayName": "List",
-    "bottomRow": 44,
-    "parentRowSpace": 10,
-    "hideCard": false,
-    "templateBottomRow": 16,
-    "mobileRightColumn": 31,
-    "mainContainerId": "eyvfzb9e62",
-    "primaryKeys": "{{List1.listData.map((currentItem, currentIndex) =>String(currentIndex))}}",
-    "parentColumnSpace": 2.09661865234375,
-    "dynamicTriggerPathList": [{"key": "onItemClick"}],
-    "gridType": "vertical",
-    "key": "tuds3xsoko",
-    "backgroundColor": "transparent",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "widgetId": "oys38mpanj",
-    "minWidth": 450,
-    "onItemClick": "{{app.updateTodo(currentIndex, {completed: !currentItem.completed})}}",
-    "parentId": "7ehlstw718",
-    "renderMode": "CANVAS",
-    "mobileTopRow": 4,
-    "responsiveBehavior": "fill",
-    "mobileLeftColumn": 7,
-    "selectedItemView": "{{{}}}"
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "additionalStaticProps": [
+    "level",
+    "levelData",
+    "prefixMetaWidgetId",
+    "metaWidgetId"
+  ],
+  "animateLoading": true,
+  "backgroundColor": "transparent",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 44,
+  "boxShadow": "none",
+  "children": [
+    {
+      "bottomRow": 440,
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "displayName": "Canvas",
+      "dropDisabled": true,
+      "dynamicBindingPathList": [],
+      "flexLayers": [],
+      "hideCard": true,
+      "isDeprecated": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "kg9l7bbjyw",
+      "leftColumn": 0,
+      "minHeight": 400,
+      "minWidth": 450,
+      "mobileBottomRow": 400,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 50.31884765625,
+      "mobileTopRow": 0,
+      "noPad": true,
+      "openParentPropertyPane": true,
+      "parentColumnSpace": 1,
+      "parentId": "oys38mpanj",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 50.31884765625,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "qlp2y0x1ui",
+      "widgetName": "Canvas4"
+    }
+  ],
+  "currentItemsView": "{{[]}}",
+  "displayName": "List",
+  "dynamicBindingPathList": [
+    {
+      "key": "currentItemsView"
+    },
+    {
+      "key": "selectedItemView"
+    },
+    {
+      "key": "triggeredItemView"
+    },
+    {
+      "key": "primaryKeys"
+    },
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "listData"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "primaryKeys"
+    },
+    {
+      "key": "onItemClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onItemClick"
+    }
+  ],
+  "enhancements": true,
+  "gridType": "vertical",
+  "hasMetaWidgets": true,
+  "hideCard": false,
+  "iconSVG": "https://appcdn.appsmith.com/static/media/icon.5c9511142b3624c7491c5442e8ccd0ef.svg",
+  "isCanvas": true,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "itemBackgroundColor": "#FFFFFF",
+  "itemSpacing": 8,
+  "key": "tuds3xsoko",
+  "leftColumn": 0,
+  "listData": "{{data.todos}}",
+  "mainCanvasId": "qlp2y0x1ui",
+  "mainContainerId": "eyvfzb9e62",
+  "minWidth": 450,
+  "mobileBottomRow": 44,
+  "mobileLeftColumn": 7,
+  "mobileRightColumn": 31,
+  "mobileTopRow": 4,
+  "onItemClick": "{{app.updateTodo(currentIndex, {completed: !currentItem.completed})}}",
+  "pageSize": 7,
+  "parentColumnSpace": 2.09661865234375,
+  "parentId": "7ehlstw718",
+  "parentRowSpace": 10,
+  "primaryKeys": "{{List1.listData.map((currentItem, currentIndex) =>String(currentIndex))}}",
+  "renderMode": "CANVAS",
+  "requiresFlatWidgetChildren": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "selectedItemView": "{{{}}}",
+  "tags": [
+    "Suggested",
+    "Display"
+  ],
+  "templateBottomRow": 16,
+  "topRow": 0,
+  "triggeredItemView": "{{{}}}",
+  "type": "LIST_WIDGET_V2",
+  "widgetId": "oys38mpanj",
+  "widgetName": "List1"
 }
