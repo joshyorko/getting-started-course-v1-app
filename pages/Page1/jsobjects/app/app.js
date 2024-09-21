@@ -1,20 +1,40 @@
 export default {
-	init () {
-		data.todos = appsmith.store.todos || data.dummyTodos;
+	init() {
+		try {
+			data.todos = appsmith.store.todos || data.dummyTodos;
+		} catch (error) {
+			console.error("Error initializing todos:", error);
+		}
 	},
 	updateTodo (id, update) {
-		data.todos[id] = {...data.todos[id], ...update};
-		storeValue('todos', data.todos);
+		try {
+			data.todos[id] = { ...data.todos[id], ...update };
+			storeValue('todos', data.todos);
+		} catch (error) {
+			console.error("Error updating todo:", error);
+		}
 	},
 	addTodo (title) {
-		this.updateTodo(data.todos.length, {title, completed: false});
+		try {
+			this.updateTodo(data.todos.length, { title, completed: false });
+		} catch (error) {
+			console.error("Error adding todo:", error);
+		}
 	},
 	deleteTodo (id) {
-		data.todos.splice(id, 1);
-		storeValue('todos', data.todos);
+		try {
+			data.todos.splice(id, 1);
+			storeValue('todos', data.todos);
+		} catch (error) {
+			console.error("Error deleting todo:", error);
+		}
 	},
 	editTodo (id, title) {
-		data.activeTodo = undefined;
-		this.updateTodo(id, {title});
+		try {
+			data.activeTodo = undefined;
+			this.updateTodo(id, { title });
+		} catch (error) {
+			console.error("Error editing todo:", error);
+		}
 	},
 }
